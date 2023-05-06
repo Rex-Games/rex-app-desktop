@@ -1,5 +1,5 @@
 import { Container, Navbar as NextNavbar, Text } from '@nextui-org/react';
-import Logo from '@/components/Layout/Logo';
+import Logo from '@/modules/Layout/Logo';
 
 function Navbar(): JSX.Element {
   return (
@@ -8,16 +8,14 @@ function Navbar(): JSX.Element {
         <NextNavbar.Brand>
           <Logo />
           <Text b color="inherit" hideIn="xs">
-            ACME
+            REX
           </Text>
         </NextNavbar.Brand>
         <NextNavbar.Content hideIn="xs" variant="underline-rounded">
-          <NextNavbar.Link href="#">Features</NextNavbar.Link>
           <NextNavbar.Link isActive href="#">
-            Customers
+            Library
           </NextNavbar.Link>
-          <NextNavbar.Link href="#">Pricing</NextNavbar.Link>
-          <NextNavbar.Link href="#">Company</NextNavbar.Link>
+          <NextNavbar.Link href="#">Store</NextNavbar.Link>
         </NextNavbar.Content>
       </NextNavbar>
     </Container>
